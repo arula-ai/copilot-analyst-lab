@@ -1,0 +1,21 @@
+# Ignore sensitive data
+*.xlsx
+*.xls
+*_real_data.*
+*_production.*
+*_sensitive.*
+
+# Ignore temporary files
+*.tmp
+*.bak
+~*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/settings.json
+
+# Output files during training
+/outputs/*.draft.*

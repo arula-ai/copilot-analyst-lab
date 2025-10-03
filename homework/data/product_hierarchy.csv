@@ -1,0 +1,203 @@
+product_sku,product_name,category,subcategory,parent_sku,unit_cost,target_margin_pct,active_flag
+P001,Tables Product 1,Furniture,Tables,,952.93,43,N
+P002,Printers Product 2,Office Equipment,Printers,P007,1952.22,33,Y
+P003,Printers Product 3,Office Equipment,Printers,P008,1823.47,25,Y
+P004,Design Product 4,Software,Design,P009,1576.04,48,Y
+P005,Printers Product 5,Office Equipment,Printers,,1832.42,28,Y
+P006,Phones Product 6,Electronics,Phones,,592.67,17,Y
+P007,Speakers Product 7,ELECTRONICS,Speakers,P999,308.33,15,Y
+P008,Sofas Product 8,Furniture,Sofas,,1348.73,46,N
+P009,Desks Product 9,Office Equipment,Desks,P005,733.12,19,N
+P010,Speakers Product 10,ELECTRONICS,Speakers,,299.9,28,Y
+P011,Printers Product 11,Office Equipment,Printers,,1625.68,28,Y
+P012,Speakers Product 12,ELECTRONICS,Speakers,,1936.04,49,Y
+P013,Laptops Product 13,Electronics,Laptops,P999,1811.89,30,Y
+P014,Tablets Product 14,Electronics,Tablets,,831.87,46,Y
+P015,Tables Product 15,Furniture,Tables,,286.86,50,Y
+P016,Laptops Product 16,Electronics,Laptops,,725.13,30,Y
+P017,Speakers Product 17,ELECTRONICS,Speakers,,497.17,37,Y
+P018,Printers Product 18,Office Equipment,Printers,,1635.16,31,Y
+P019,Shelves Product 19,Furniture,Shelves,,117.9,29,Y
+P020,Laptops Product 20,Electronics,Laptops,,766.49,11,Y
+P021,Tables Product 21,Furniture,Tables,,810.28,31,Y
+P022,Printers Product 22,Office Equipment,Printers,P016,425.53,17,Y
+P023,Database Product 23,Software,Database,P010,463.53,13,N
+P024,Sofas Product 24,Furniture,Sofas,,590.44,23,N
+P025,Speakers Product 25,ELECTRONICS,Speakers,P011,344.32,48,N
+P026,Washers Product 26,Home Appliances,Washers,,768.88,18,Y
+P027,Chairs Product 27,Office Equipment,Chairs,P999,950.53,29,Y
+P028,Refrigerators Product 28,Home Appliances,Refrigerators,P002,339.6,40,Y
+P029,Security Product 29,Software,Security,P026,356.54,10,Y
+P030,Filing Cabinets Product 30,Office Equipment,Filing Cabinets,,480.9,17,Y
+P031,Database Product 31,Software,Database,,28.27,41,Y
+P032,Microwaves Product 32,Home Appliances,Microwaves,,1677.21,21,Y
+P033,Washers Product 33,Home Appliances,Washers,,1851.92,47,Y
+P034,Washers Product 34,Home Appliances,Washers,,1364.0,15,Y
+P035,Dryers Product 35,Home Appliances,Dryers,,1557.38,28,Y
+P036,Sofas Product 36,Furniture,Sofas,P010,1435.98,46,Y
+P037,Security Product 37,Software,Security,P015,248.35,23,N
+P038,Washers Product 38,Home Appliances,Washers,P009,1318.34,50,Y
+P039,Tablets Product 39,Electronics,Tablets,P006,1786.77,16,Y
+P040,Microwaves Product 40,Home Appliances,Microwaves,,326.86,30,Y
+P041,Design Product 41,Software,Design,,1998.65,22,Y
+P042,Productivity Product 42,Software,Productivity,,1112.46,45,N
+P043,Cameras Product 43,ELECTRONICS,Cameras,,1441.72,35,Y
+P044,Tablets Product 44,Electronics,Tablets,,1976.58,21,Y
+P045,Speakers Product 45,ELECTRONICS,Speakers,,31.45,43,N
+P046,Chairs Product 46,Office Equipment,Chairs,P042,401.69,38,Y
+P047,Shelves Product 47,Furniture,Shelves,,1567.72,37,N
+P048,Speakers Product 48,ELECTRONICS,Speakers,,1002.77,27,Y
+P049,Tablets Product 49,Electronics,Tablets,P014,427.04,20,Y
+P050,Chairs Product 50,Office Equipment,Chairs,P044,372.29,24,Y
+P051,Refrigerators Product 51,Home Appliances,Refrigerators,P020,1040.46,46,Y
+P052,Cameras Product 52,ELECTRONICS,Cameras,,1036.9,34,Y
+P053,Laptops Product 53,Electronics,Laptops,,187.23,10,Y
+P054,Microwaves Product 54,Home Appliances,Microwaves,,881.96,46,Y
+P055,Speakers Product 55,ELECTRONICS,Speakers,,1600.36,48,Y
+P056,Phones Product 56,Electronics,Phones,,1352.27,34,N
+P057,Cameras Product 57,ELECTRONICS,Cameras,P048,1054.16,15,Y
+P058,Monitors Product 58,Electronics,Monitors,,32.89,44,Y
+P059,Refrigerators Product 59,Home Appliances,Refrigerators,,1339.18,39,Y
+P060,Washers Product 60,Home Appliances,Washers,,1765.47,11,N
+P061,Cameras Product 61,ELECTRONICS,Cameras,P015,1889.45,26,Y
+P062,Productivity Product 62,Software,Productivity,P037,1066.89,28,Y
+P063,Washers Product 63,Home Appliances,Washers,,581.17,12,Y
+P064,Refrigerators Product 64,Home Appliances,Refrigerators,P011,1130.58,21,Y
+P065,Monitors Product 65,Electronics,Monitors,P056,732.8,22,Y
+P066,Filing Cabinets Product 66,Office Equipment,Filing Cabinets,,584.08,41,N
+P067,Monitors Product 67,Electronics,Monitors,,364.95,38,Y
+P068,Tables Product 68,Furniture,Tables,,54.11,44,Y
+P069,Microwaves Product 69,Home Appliances,Microwaves,P046,782.14,40,Y
+P070,Speakers Product 70,ELECTRONICS,Speakers,P056,436.07,30,Y
+P071,Tables Product 71,Furniture,Tables,,304.64,49,Y
+P072,Speakers Product 72,ELECTRONICS,Speakers,,1655.64,38,Y
+P073,Printers Product 73,Office Equipment,Printers,,936.7,30,Y
+P074,Tablets Product 74,Electronics,Tablets,,1541.87,40,Y
+P075,Productivity Product 75,Software,Productivity,,648.48,13,Y
+P076,Microwaves Product 76,Home Appliances,Microwaves,P067,468.5,44,Y
+P077,Laptops Product 77,Electronics,Laptops,,1389.98,17,Y
+P078,Filing Cabinets Product 78,Office Equipment,Filing Cabinets,,159.81,48,Y
+P079,Productivity Product 79,Software,Productivity,,1616.64,41,Y
+P080,Refrigerators Product 80,Home Appliances,Refrigerators,P063,332.56,23,Y
+P081,Refrigerators Product 81,Home Appliances,Refrigerators,,76.76,23,Y
+P082,Phones Product 82,Electronics,Phones,,90.48,18,Y
+P083,Washers Product 83,Home Appliances,Washers,P060,939.77,40,Y
+P084,Laptops Product 84,Electronics,Laptops,P053,332.66,31,Y
+P085,Cameras Product 85,ELECTRONICS,Cameras,,600.27,17,N
+P086,Cameras Product 86,ELECTRONICS,Cameras,,1792.66,11,Y
+P087,Microwaves Product 87,Home Appliances,Microwaves,,548.9,23,N
+P088,Filing Cabinets Product 88,Office Equipment,Filing Cabinets,P999,366.37,29,Y
+P089,Tablets Product 89,Electronics,Tablets,,1348.14,21,Y
+P090,Refrigerators Product 90,Home Appliances,Refrigerators,,1939.8,50,Y
+P091,Dryers Product 91,Home Appliances,Dryers,P005,1328.07,17,N
+P092,Dryers Product 92,Home Appliances,Dryers,P055,1664.03,47,Y
+P093,Monitors Product 93,Electronics,Monitors,,715.64,18,Y
+P094,Beds Product 94,Furniture,Beds,P078,888.8,13,Y
+P095,Desks Product 95,Office Equipment,Desks,,847.65,39,Y
+P096,Cameras Product 96,ELECTRONICS,Cameras,P999,131.32,25,Y
+P097,Database Product 97,Software,Database,,693.72,33,Y
+P098,Printers Product 98,Office Equipment,Printers,P999,395.18,25,Y
+P099,Monitors Product 99,Electronics,Monitors,,1841.14,25,Y
+P100,Phones Product 100,Electronics,Phones,P999,1729.6,43,Y
+P101,Dryers Product 101,Home Appliances,Dryers,,134.74,12,Y
+P102,Speakers Product 102,ELECTRONICS,Speakers,P999,1254.36,30,Y
+P103,Tables Product 103,Furniture,Tables,P092,1257.76,21,N
+P104,Design Product 104,Software,Design,,402.7,18,Y
+P105,Sofas Product 105,Furniture,Sofas,,1397.21,12,Y
+P106,Tablets Product 106,Electronics,Tablets,,568.12,44,Y
+P107,Database Product 107,Software,Database,P010,652.26,46,Y
+P108,Cameras Product 108,ELECTRONICS,Cameras,,514.49,21,Y
+P109,Cameras Product 109,ELECTRONICS,Cameras,,861.05,13,Y
+P110,Laptops Product 110,Electronics,Laptops,,1899.13,11,Y
+P111,Database Product 111,Software,Database,P107,1133.07,37,Y
+P112,Cameras Product 112,ELECTRONICS,Cameras,P042,1438.81,49,Y
+P113,Design Product 113,Software,Design,,1051.82,31,Y
+P114,Phones Product 114,Electronics,Phones,,532.62,41,Y
+P115,Desks Product 115,Office Equipment,Desks,P114,413.06,44,Y
+P116,Washers Product 116,Home Appliances,Washers,P074,1837.21,25,Y
+P117,Productivity Product 117,Software,Productivity,P059,1399.9,49,Y
+P118,Washers Product 118,Home Appliances,Washers,,265.82,45,Y
+P119,Beds Product 119,Furniture,Beds,,1850.04,37,Y
+P120,Cameras Product 120,ELECTRONICS,Cameras,P032,425.84,24,Y
+P121,Database Product 121,Software,Database,,1148.05,40,Y
+P122,Sofas Product 122,Furniture,Sofas,,1440.94,17,N
+P123,Security Product 123,Software,Security,,736.57,33,Y
+P124,Tables Product 124,Furniture,Tables,P106,469.41,18,Y
+P125,Phones Product 125,Electronics,Phones,,1628.86,49,Y
+P126,Microwaves Product 126,Home Appliances,Microwaves,,1425.48,48,Y
+P127,Tables Product 127,Furniture,Tables,P106,1042.11,43,N
+P128,Productivity Product 128,Software,Productivity,P021,1330.34,28,Y
+P129,Monitors Product 129,Electronics,Monitors,,130.72,47,Y
+P130,Phones Product 130,Electronics,Phones,P025,1549.9,30,Y
+P131,Security Product 131,Software,Security,,1656.08,36,Y
+P132,Tablets Product 132,Electronics,Tablets,,770.92,40,Y
+P133,Chairs Product 133,Office Equipment,Chairs,,80.27,13,Y
+P134,Desks Product 134,Office Equipment,Desks,,1211.18,39,Y
+P135,Laptops Product 135,Electronics,Laptops,P016,487.16,40,Y
+P136,Printers Product 136,Office Equipment,Printers,,1691.76,47,Y
+P137,Shelves Product 137,Furniture,Shelves,P092,358.77,11,Y
+P138,Phones Product 138,Electronics,Phones,P079,1374.65,42,Y
+P139,Phones Product 139,Electronics,Phones,,787.54,36,Y
+P140,Desks Product 140,Office Equipment,Desks,P999,1679.79,21,Y
+P141,Cameras Product 141,ELECTRONICS,Cameras,,1200.73,32,Y
+P142,Dryers Product 142,Home Appliances,Dryers,,1375.37,36,Y
+P143,Cameras Product 143,ELECTRONICS,Cameras,,283.28,45,Y
+P144,Tables Product 144,Furniture,Tables,,1960.28,23,Y
+P145,Laptops Product 145,Electronics,Laptops,,1781.38,29,Y
+P146,Monitors Product 146,Electronics,Monitors,,906.61,10,Y
+P147,Speakers Product 147,ELECTRONICS,Speakers,P095,404.29,43,Y
+P148,Dryers Product 148,Home Appliances,Dryers,,956.01,18,Y
+P149,Sofas Product 149,Furniture,Sofas,,1310.32,30,Y
+P150,Cameras Product 150,ELECTRONICS,Cameras,,217.07,50,Y
+P151,Phones Product 151,Electronics,Phones,P017,1100.87,14,Y
+P152,Microwaves Product 152,Home Appliances,Microwaves,P999,108.99,38,N
+P153,Tablets Product 153,Electronics,Tablets,P139,1120.55,29,Y
+P154,Sofas Product 154,Furniture,Sofas,,242.73,26,Y
+P155,Beds Product 155,Furniture,Beds,,168.72,46,Y
+P156,Shelves Product 156,Furniture,Shelves,,1806.14,32,Y
+P157,Dryers Product 157,Home Appliances,Dryers,P071,1060.95,21,Y
+P158,Monitors Product 158,Electronics,Monitors,P138,443.38,27,Y
+P159,Refrigerators Product 159,Home Appliances,Refrigerators,,1704.87,38,Y
+P160,Washers Product 160,Home Appliances,Washers,P015,1464.03,20,Y
+P161,Cameras Product 161,ELECTRONICS,Cameras,,1922.69,26,Y
+P162,Dryers Product 162,Home Appliances,Dryers,,30.81,44,Y
+P163,Chairs Product 163,Office Equipment,Chairs,P061,353.97,38,Y
+P164,Refrigerators Product 164,Home Appliances,Refrigerators,,221.07,16,Y
+P165,Printers Product 165,Office Equipment,Printers,P112,1957.63,44,Y
+P166,Sofas Product 166,Furniture,Sofas,,172.91,40,Y
+P167,Cameras Product 167,ELECTRONICS,Cameras,,1202.39,50,Y
+P168,Cameras Product 168,ELECTRONICS,Cameras,P999,96.98,12,Y
+P169,Dryers Product 169,Home Appliances,Dryers,P116,811.61,35,Y
+P170,Cameras Product 170,ELECTRONICS,Cameras,,401.43,32,Y
+P171,Sofas Product 171,Furniture,Sofas,,63.4,46,Y
+P172,Desks Product 172,Office Equipment,Desks,,1693.02,46,N
+P173,Cameras Product 173,ELECTRONICS,Cameras,P066,530.39,13,Y
+P174,Speakers Product 174,ELECTRONICS,Speakers,P062,1648.32,48,Y
+P175,Filing Cabinets Product 175,Office Equipment,Filing Cabinets,P117,916.24,21,Y
+P176,Phones Product 176,Electronics,Phones,,373.39,33,Y
+P177,Database Product 177,Software,Database,P092,504.98,45,Y
+P178,Refrigerators Product 178,Home Appliances,Refrigerators,,1416.25,40,N
+P179,Speakers Product 179,ELECTRONICS,Speakers,,941.44,27,Y
+P180,Laptops Product 180,Electronics,Laptops,P121,1186.53,13,N
+P181,Refrigerators Product 181,Home Appliances,Refrigerators,P157,953.37,41,N
+P182,Microwaves Product 182,Home Appliances,Microwaves,P999,1686.23,42,Y
+P183,Cameras Product 183,ELECTRONICS,Cameras,,1970.32,24,Y
+P184,Microwaves Product 184,Home Appliances,Microwaves,,1972.88,19,Y
+P185,Monitors Product 185,Electronics,Monitors,P096,656.46,16,Y
+P186,Design Product 186,Software,Design,P999,18.61,36,Y
+P187,Beds Product 187,Furniture,Beds,P022,1361.68,48,Y
+P188,Dryers Product 188,Home Appliances,Dryers,,1434.12,23,Y
+P189,Productivity Product 189,Software,Productivity,P113,311.08,21,Y
+P190,Phones Product 190,Electronics,Phones,,1348.26,15,Y
+P191,Cameras Product 191,ELECTRONICS,Cameras,P102,301.28,40,Y
+P192,Security Product 192,Software,Security,,787.39,32,Y
+P193,Laptops Product 193,Electronics,Laptops,,206.29,48,Y
+P194,Phones Product 194,Electronics,Phones,P999,1556.39,47,Y
+P195,Design Product 195,Software,Design,,1231.14,22,Y
+P196,Printers Product 196,Office Equipment,Printers,,1427.4,22,Y
+P197,Filing Cabinets Product 197,Office Equipment,Filing Cabinets,,858.39,25,Y
+P198,Cameras Product 198,ELECTRONICS,Cameras,,510.37,47,Y
+P199,Microwaves Product 199,Home Appliances,Microwaves,,1786.35,22,Y
+P200,Desks Product 200,Office Equipment,Desks,,1142.77,30,Y
+P011,Printers Product 11,Office Equipment,Printers,,1625.68,28,Y
+P026,Washers Product 26,Home Appliances,Washers,,768.88,18,Y
