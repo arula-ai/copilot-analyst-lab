@@ -3,26 +3,28 @@
 ## Session Timeline
 
 ### 0-5 Minutes: Setup & Safety
-- [ ] Open VS Code with Copilot Chat
-- [ ] Review VERIFY_BEFORE_SEND.md
-- [ ] Understand data privacy rules
-- [ ] Check /data/ files are loaded
+- [ ] VS Code + Copilot Chat open
+- [ ] Skim VERIFY_BEFORE_SEND.md
+- [ ] Recall privacy rules
+- [ ] Ensure /data/ files ready
+- [ ] Practice using `#file` syntax (e.g., `#fees_calc.cob`) in prompts
 
 **First Time?** Read `QUICK_START.md` before continuing!
 
 ---
 
 ### 5-25 Minutes: Prompt Engineering Practice
-- [ ] Review RIFCC_FRAMEWORK.md in /reference/
-- [ ] Complete transactions.csv analysis
-- [ ] Generate 3 SQL queries for business questions
-- [ ] Document validation steps in DATA_NOTES.md
+- [ ] Skim reference/RIFCC_FRAMEWORK.md
+- [ ] Note table layout from data/schema.sql
+- [ ] Finish transactions.csv scan
+- [ ] Draft 3 business SQL queries
+- [ ] Log validation in DATA_NOTES.md
 
-#### 📝 Sample Prompts to Try
+#### Sample Prompts to Try
 
 **Data Quality Analysis:**
 ```
-"Analyze data/transactions.csv and identify all data quality issues. 
+"Analyze #transactions.csv and #customers.csv for data quality issues. 
 For each issue, provide: description, count, impact, and recommended fix."
 ```
 
@@ -32,7 +34,7 @@ For each issue, provide: description, count, impact, and recommended fix."
 1. Top 10 customers by total revenue (completed transactions only)
 2. Failed transaction rate by region
 3. Average transaction amount by customer tier
-Use the schema in data/schema.sql and include comments."
+Use #schema.sql for column names and include comments."
 ```
 
 **Validation Query:**
@@ -44,18 +46,18 @@ Check for: null values, duplicates, negative amounts, and invalid dates."
 ---
 
 ### 25-40 Minutes: Legacy Analysis Lab (CRITICAL)
-- [ ] Open /legacy/ COBOL files
-- [ ] Use Copilot to explain business logic
-- [ ] Create REQ_Logic.md with decision tables
-- [ ] Generate REQ_DataMap.md
-- [ ] Build REQ_Flow.md with Mermaid diagram
-- [ ] Document 5+ risks in RISK_Register.md
+- [ ] Open legacy COBOL files
+- [ ] Ask Copilot for business logic
+- [ ] Build REQ_Logic.md decision tables
+- [ ] Produce REQ_DataMap.md
+- [ ] Build REQ_Flow.md Mermaid flow
+- [ ] Note 5+ risks in RISK_Register.md
 
-#### 📝 Sample Prompts to Try
+#### Sample Prompts to Try
 
 **Understanding COBOL:**
 ```
-"Acting as a business analyst, explain legacy/fees_calc.cob in plain English:
+"Acting as a business analyst, explain #fees_calc.cob in plain English:
 1. What are the inputs and outputs?
 2. What business rules are implemented?
 3. What are the key calculations?
@@ -64,20 +66,20 @@ Format as a business requirements document."
 
 **Extract Business Rules:**
 ```
-"Extract all business rules from legacy/fees_calc.cob and create a decision table 
+"Extract all business rules from #fees_calc.cob and create a decision table 
 showing: Transaction Type, Customer Tier, Transaction Amount, Resulting Fee %. 
 Include all combinations and edge cases."
 ```
 
 **Create Process Flow:**
 ```
-"Based on legacy/customer_risk.cob, create a Mermaid flowchart showing the 
+"Based on #customer_risk.cob, create a Mermaid flowchart showing the 
 risk scoring process. Include all decision points and scoring factors."
 ```
 
 **Risk Identification:**
 ```
-"Review legacy/fees_calc.cob and legacy/batch_reconcile.cob. Identify at least 
+"Review #fees_calc.cob and #batch_reconcile.cob. Identify at least 
 5 risks related to: hard-coded values, error handling, scalability, and 
 maintainability. For each risk, provide: likelihood, impact, and mitigation."
 ```
@@ -85,18 +87,18 @@ maintainability. For each risk, provide: likelihood, impact, and mitigation."
 ---
 
 ### 40-55 Minutes: Excel to SQL Lab
-- [ ] Create Excel formulas for KPIs
-- [ ] Generate equivalent SQL
-- [ ] Verify calculations match
-- [ ] Document in REPORT_NOTES.md
+- [ ] Draft KPI Excel formulas
+- [ ] Mirror SQL equivalents
+- [ ] Reason through calc parity with schema
+- [ ] Log in REPORT_NOTES.md
 
-#### 📝 Sample Prompts to Try
+#### Sample Prompts to Try
 
 **Formula to SQL Conversion:**
 ```
 "I have an Excel formula: =SUMIFS(Amount, Status, 'Completed', Tier, 'Gold')
-Convert this to SQL using the transactions and customers tables. 
-Include the equivalent formula for all three tiers."
+Convert this to SQL using #transactions.csv and #customers.csv. 
+Include the equivalent logic for all three tiers."
 ```
 
 **KPI Dashboard:**
@@ -106,35 +108,35 @@ Include the equivalent formula for all three tiers."
 - Success rate by payment method
 - Top 5 products by revenue
 - Customer tier distribution
-Include CTEs for readability and comments explaining each metric."
+Use #schema.sql for column names, include CTEs and explanatory comments."
 ```
 
 ---
 
 ### 55-65 Minutes: Governance Lab
 - [ ] Review /exercises/ flawed files
-- [ ] Identify all errors using Copilot
+- [ ] Ask Copilot to flag errors
 - [ ] Document corrections
 - [ ] Update VERIFY_BEFORE_SEND.md
 
-#### 📝 Sample Prompts to Try
+#### Sample Prompts to Try
 
 **Error Detection:**
 ```
-"Review exercises/flawed_sql_example.sql and identify all errors. 
+"Review #flawed_sql_example.sql and identify all errors. 
 For each error, explain: what's wrong, why it's wrong, and the corrected version."
 ```
 
 **Analysis Critique:**
 ```
-"Review exercises/flawed_analysis.md as a senior data analyst. 
+"Review #flawed_analysis.md as a senior data analyst. 
 Identify all logical errors, impossible statistics, and questionable conclusions. 
 Explain what's wrong and what the correct approach should be."
 ```
 
 **Code Review:**
 ```
-"Review exercises/flawed_join_logic.py and identify all bugs and logic errors. 
+"Review #flawed_join_logic.py and identify all bugs and logic errors. 
 Focus on: data type issues, null handling, join logic, and function application. 
 Provide corrected code with explanations."
 ```
@@ -142,28 +144,28 @@ Provide corrected code with explanations."
 ---
 
 ### 65-75 Minutes: Wrap-up
-- [ ] Save all artifacts to /outputs/
-- [ ] Commit changes with meaningful messages
-- [ ] Complete session feedback
+- [ ] Save artifacts to /outputs/
+- [ ] Commit with meaningful messages
+- [ ] Submit session feedback
 
 ---
 
 ## Common Pitfalls to Avoid
 
-❌ **Don't**: Copy Copilot's output without verification  
-✅ **Do**: Ask "Can you show test cases for this SQL?" or "How can I validate this?"
+**Don't**: Copy Copilot's output without verification  
+**Do**: Ask "Can you show test cases for this SQL?" or "How can I validate this?"
 
-❌ **Don't**: Use vague prompts like "help me" or "explain this"  
-✅ **Do**: Use RIFCC structure (Role, Inputs, Format, Constraints, Checks)
+**Don't**: Use vague prompts like "help me" or "explain this"  
+**Do**: Use RIFCC structure (Role, Inputs, Format, Constraints, Checks)
 
-❌ **Don't**: Assume AI-generated code is perfect  
-✅ **Do**: Always validate against sample data or known results
+**Don't**: Assume AI-generated code is perfect  
+**Do**: Validate against schema, business rules, or provided samples
 
-❌ **Don't**: Share real customer data with Copilot  
-✅ **Do**: Use only the synthetic data provided in this lab
+**Don't**: Share real customer data with Copilot  
+**Do**: Use only the synthetic data provided in this lab
 
-❌ **Don't**: Accept the first answer  
-✅ **Do**: Ask follow-up questions like "What are the edge cases?" or "What could go wrong?"
+**Don't**: Accept the first answer  
+**Do**: Ask follow-up questions like "What are the edge cases?" or "What could go wrong?"
 
 ---
 
@@ -172,31 +174,31 @@ Provide corrected code with explanations."
 By the end of this lab, you should have:
 
 ### Data Analysis
-- [ ] Identified at least 8 data quality issues in transactions.csv
-- [ ] Written and tested 3+ SQL queries for business questions
-- [ ] Created validation queries to check data integrity
+- [ ] 8+ data issues in transactions.csv
+- [ ] 3+ SQL queries written + schema-checked
+- [ ] Validation queries built
 
 ### Legacy Analysis  
-- [ ] Extracted 5+ business rules from fees_calc.cob in plain English
-- [ ] Created a decision table showing fee calculation logic
-- [ ] Generated a process flow diagram for risk scoring
-- [ ] Documented 5+ risks with mitigation strategies
+- [ ] 5+ fees_calc.cob rules documented
+- [ ] Fee decision table done
+- [ ] Risk scoring flow drafted
+- [ ] 5+ risks + mitigations logged
 
 ### Governance
-- [ ] Found all 6 errors in flawed_sql_example.sql
-- [ ] Identified logical errors in flawed_analysis.md
-- [ ] Fixed bugs in flawed_join_logic.py
+- [ ] Six errors found in flawed_sql_example.sql
+- [ ] flawed_analysis.md logic issues noted
+- [ ] flawed_join_logic.py bugs fixed
 
 ### Documentation
-- [ ] Filled out at least 3 template files in /outputs/
-- [ ] All documentation includes assumptions and validation steps
-- [ ] Used templates from /templates/ directory
+- [ ] 3+ templates filled in /outputs/
+- [ ] Docs list assumptions + validation
+- [ ] Used /templates/ files
 
 ---
 
 ## Key Reminders
 - NO real data in prompts
-- Always validate Copilot outputs
+- Always validate Copilot outputs against schema + business rules
 - Document your assumptions
 - Save work frequently
 - Ask follow-up questions to improve results
