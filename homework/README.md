@@ -2,13 +2,14 @@
 
 ## Overview
 
-Congratulations on completing the GitHub Copilot for Business Analysts workshop! 🎉
+Congrats on finishing the GitHub Copilot for Business Analysts workshop!
 
-These homework exercises will help you:
-- **Reinforce** what you learned in the workshop
-- **Practice** on more complex, real-world scenarios
-- **Build confidence** using Copilot independently
-- **Develop** production-ready skills
+Homework goals:
+- **Reinforce** workshop skills
+- **Practice** using `data/schema.sql` without spinning up databases
+- **Practice** tougher scenarios
+- **Build confidence** using Copilot solo
+- **Develop** production-ready habits
 
 ---
 
@@ -16,9 +17,9 @@ These homework exercises will help you:
 
 **Total:** 3-4 hours (spread over 1-2 weeks)
 
-You can complete these exercises at your own pace. We recommend:
-- Week 1: Exercises 1-3 (2-3 hours)
-- Week 2: Exercises 4-5 (1 hour)
+Suggested pacing:
+- Week 1: Exercises 1-3 (2-3 hr)
+- Week 2: Exercises 4-5 (1 hr)
 
 ---
 
@@ -26,11 +27,11 @@ You can complete these exercises at your own pace. We recommend:
 
 | Exercise | Topic | Time | Difficulty | Points |
 |----------|-------|------|------------|--------|
-| 1 | Advanced COBOL Analysis | 30-45 min | ⭐⭐⭐ | 20 |
-| 2 | Real-World Data Analysis | 45-60 min | ⭐⭐⭐⭐ | 25 |
-| 3 | End-to-End Documentation | 60-90 min | ⭐⭐⭐⭐⭐ | 30 |
-| 4 | Governance Challenge | 30 min | ⭐⭐⭐ | 15 |
-| 5 | Prompt Engineering Mastery | 20-30 min | ⭐⭐ | 10 |
+| 1 | Advanced COBOL Analysis | 30-45 min | 3/5 | 20 |
+| 2 | Real-World Data Analysis | 45-60 min | 4/5 | 25 |
+| 3 | End-to-End Documentation | 60-90 min | 5/5 | 30 |
+| 4 | Governance Challenge | 30 min | 3/5 | 15 |
+| 5 | Prompt Engineering Mastery | 20-30 min | 2/5 | 10 |
 
 **Total:** 100 points
 
@@ -38,11 +39,11 @@ You can complete these exercises at your own pace. We recommend:
 
 ## Exercise Files
 
-- **EXERCISE_1_Advanced_COBOL.md** - Analyze complex legacy systems
-- **EXERCISE_2_Data_Analysis.md** - Work with messy real-world data
-- **EXERCISE_3_Complete_Documentation.md** - Create full documentation package
-- **EXERCISE_4_Governance.md** - Find and fix errors in deliverables
-- **EXERCISE_5_Prompts.md** - Master advanced prompting techniques
+- **EXERCISE_1_Advanced_COBOL.md** - Legacy system deep dive
+- **EXERCISE_2_Data_Analysis.md** - Messy data cleanup
+- **EXERCISE_3_Complete_Documentation.md** - Full documentation set
+- **EXERCISE_4_Governance.md** - Error hunt
+- **EXERCISE_5_Prompts.md** - Prompt mastery
 
 ---
 
@@ -99,118 +100,88 @@ Save all your work to `/outputs/homework/`:
 ## Getting Started
 
 ### Step 1: Review Workshop Materials
-Before starting homework, review:
-- `SESSION_GUIDE.md` - Refresh on what you learned
-- `reference/RIFCC_FRAMEWORK.md` - Advanced prompting techniques
-- `reference/GLOSSARY.md` - Technical terms reference
+- `SESSION_GUIDE.md` - refresh core flow
+- `reference/RIFCC_FRAMEWORK.md` - advanced prompting
+- `reference/GLOSSARY.md` - terminology
 
 ### Step 2: Set Up Your Environment
-1. Ensure GitHub Copilot Chat is active
-2. Have the homework folder open in VS Code
-3. Review the data files to understand what you're working with
+1. Copilot Chat on
+2. Homework folder open in VS Code
+3. Skim homework data files
 
 ### Step 3: Start with Exercise 1
-Open `EXERCISE_1_Advanced_COBOL.md` and follow the instructions.
+Open `EXERCISE_1_Advanced_COBOL.md`, proceed.
 
 ---
 
 ## Tips for Success
 
-### ✅ Do This
-- **Use RIFCC Framework** - Structure every prompt with Role, Inputs, Format, Constraints, Checks
-- **Validate Everything** - Don't trust Copilot's output without testing
-- **Document Assumptions** - Note what you're assuming in your analysis
-- **Iterate on Prompts** - If you don't get good results, refine your prompt
-- **Save Work Frequently** - Save your progress as you go
+### Do This
+- **Use RIFCC** for every prompt (attach files with `#filename`, e.g., `#inventory_update.cob`)
+- **Validate** Copilot output against schema + requirements
+- **Document** assumptions
+- **Iterate** prompts quickly
+- **Save** work often
 
-### ❌ Avoid This
-- **Don't Rush** - Quality matters more than speed
-- **Don't Skip Validation** - Always test SQL queries and verify calculations
-- **Don't Copy Without Understanding** - Make sure you understand what Copilot generated
-- **Don't Use Real Data** - Only use the provided synthetic datasets
-- **Don't Work in Isolation** - If stuck, review workshop materials or ask for help
+### Avoid This
+- Avoid **rushing** deliverables
+- Avoid **skipping validation**
+- Avoid **blind copying** Copilot output
+- Avoid **using real data**
+- Avoid **working solo** when stuck
 
 ---
 
 ## Evaluation Criteria
-
-Your work will be evaluated on:
-
-### Completeness (30%)
-- All deliverables submitted
-- All sections of templates filled out
-- Exercises fully completed
-
-### Quality (40%)
-- Professional documentation
-- Accurate technical details
-- Clear, well-structured content
-- Proper use of templates
-
-### Correctness (20%)
-- SQL queries work and produce correct results
-- Business rules accurately extracted
-- Errors identified and fixed properly
-
-### Critical Thinking (10%)
-- Thoughtful analysis
-- Assumptions documented
-- Edge cases considered
-- Recommendations actionable
+- **Completeness (30%)**: deliverables uploaded, templates filled, exercises done
+- **Quality (40%)**: pro docs, accurate details, clear structure, template fit
+- **Correctness (20%)**: SQL aligns with schema, rules correct, errors fixed
+- **Critical Thinking (10%)**: analysis depth, assumptions noted, edge cases, actionable recs
 
 ---
 
 ## Submission Instructions
 
-When complete:
-1. Ensure all files are in `/outputs/homework/`
-2. Review the grading rubric in `GRADING_RUBRIC.md`
-3. Self-assess using the rubric
-4. Submit your `/outputs/homework/` folder as instructed by your trainer
+When done:
+1. Confirm `/outputs/homework/` is complete
+2. Read `GRADING_RUBRIC.md`
+3. Self-score
+4. Submit `/outputs/homework/` per trainer
 
 ---
 
 ## Need Help?
 
 ### Resources
-- **Workshop Materials** - Review `SESSION_GUIDE.md`, `QUICK_START.md`
-- **Reference Guides** - Check `/reference/` directory
-- **Sample Prompts** - See `SESSION_GUIDE.md` for examples
-- **Glossary** - Look up technical terms in `reference/GLOSSARY.md`
+- Workshop refresh -> `SESSION_GUIDE.md`, `QUICK_START.md`
+- References -> `/reference/`
+- Sample prompts -> `SESSION_GUIDE.md`
+- Glossary -> `reference/GLOSSARY.md`
 
 ### Common Issues
-
-**Problem:** Copilot isn't giving good responses  
-**Solution:** Refine your prompt using RIFCC framework. Be more specific.
-
-**Problem:** SQL query doesn't work  
-**Solution:** Ask Copilot to explain the query, then test on small dataset first.
-
-**Problem:** Don't understand COBOL code  
-**Solution:** Ask Copilot to explain in plain English, then ask for specific sections.
-
-**Problem:** Not sure if work is correct  
-**Solution:** Ask Copilot to create test cases or validation queries.
+- Copilot weak? -> refine with RIFCC, add specifics
+- SQL confusing? -> ask Copilot to explain, walk through sample rows using schema
+- COBOL unclear? -> ask for plain English + targeted sections
+- Validation doubts? -> ask for test cases or checks
 
 ---
 
 ## Learning Objectives
 
-By completing this homework, you will demonstrate ability to:
-
-✅ Independently analyze complex legacy COBOL systems  
-✅ Extract and document business rules from code  
-✅ Perform comprehensive data quality analysis  
-✅ Write production-quality SQL queries  
-✅ Create professional documentation packages  
-✅ Identify and correct errors in analysis work  
-✅ Write effective RIFCC-structured prompts  
-✅ Apply governance and validation principles  
+By completing this homework, you will:
+- Analyze complex legacy COBOL systems
+- Capture business rules clearly
+- Run deep data quality checks
+- Write production-grade SQL
+- Produce professional docs
+- Fix analysis defects
+- Craft strong RIFCC prompts
+- Apply governance + validation
 
 ---
 
 ## Ready to Begin?
 
-👉 **Start Here:** Open [EXERCISE_1_Advanced_COBOL.md](EXERCISE_1_Advanced_COBOL.md)
+Start: open [EXERCISE_1_Advanced_COBOL.md](EXERCISE_1_Advanced_COBOL.md)
 
-Good luck! You've got this! 💪
+Good luck!

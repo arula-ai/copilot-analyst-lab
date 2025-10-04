@@ -4,11 +4,12 @@
 
 You are a Business Analyst at **Global Payments Inc**, a B2B payment processor handling transactions across 5 regions (North, South, East, West, Central).
 
-Your task is to analyze recent transaction data to:
-- Identify data quality issues before reporting to executives
-- Understand transaction patterns by customer tier and region
-- Investigate failed transactions and revenue leakage
-- Prepare recommendations for process improvements
+Your job:
+- Spot data issues before reporting
+- Use `data/schema.sql` for all table references (no database install required)
+- Map patterns by tier + region
+- Probe failed transactions + revenue loss
+- Draft process improvement recs
 
 ---
 
@@ -58,6 +59,11 @@ Use GitHub Copilot to help answer these questions:
 4. What is the average transaction amount by product category?
 5. Which payment method has the highest success rate?
 
+**Excel-style baselines you can reference when asking for SQL:**
+- Monthly revenue trend: `=SUMIFS(Amount, Status, "Completed", Date, ">=" & start_of_month, Date, "<=" & end_of_month)`
+- Customer 80/20 concentration: `=LET(sorted, SORT(Table[Revenue],,-1), running, SCAN(0, sorted, LAMBDA(a,b,a+b)), running / SUM(sorted))`
+- Failed transaction alert: `=COUNTIFS(Status, "Failed", Amount, ">=500", Date, ">=" & TODAY()-7)`
+
 ### Revenue Analysis
 1. What is total revenue by month (Completed transactions only)?
 2. Which customers generate the most revenue?
@@ -68,19 +74,20 @@ Use GitHub Copilot to help answer these questions:
 
 ## Known Data Quality Issues
 
-⚠️ **IMPORTANT**: This is **real-world messy data** on purpose!
+**IMPORTANT**: This is **real-world messy data** on purpose!
 
-Part of your job as a Business Analyst is to:
-1. **Find** the data quality issues
-2. **Document** their impact on analysis
-3. **Recommend** fixes to prevent future issues
-4. **Validate** your SQL queries account for bad data
+Do this:
+1. **Find** data defects
+2. **Document** impact
+3. **Recommend** fixes
+4. **Validate** SQL against bad data
 
 **Hint to get started:** 
 ```
 Ask Copilot: "How many unique transaction_ids should there be in a 
 500-row dataset? How many unique transaction_ids are actually present?"
 ```
+Use `#transactions.csv` or similar tags so Copilot pulls the right file into context.
 
 ---
 
@@ -88,7 +95,7 @@ Ask Copilot: "How many unique transaction_ids should there be in a
 
 ### Step 1: Initial Data Profiling
 ```
-Copilot Prompt: "Analyze data/transactions.csv and provide:
+Copilot Prompt: "Analyze #transactions.csv and provide:
 - Row count
 - Column data types
 - Missing value count per column
@@ -97,7 +104,7 @@ Copilot Prompt: "Analyze data/transactions.csv and provide:
 
 ### Step 2: Data Quality Assessment
 ```
-Copilot Prompt: "Identify data quality issues in data/transactions.csv:
+Copilot Prompt: "Identify data quality issues in #transactions.csv:
 - Check for duplicates
 - Find missing values
 - Detect invalid dates
@@ -110,7 +117,8 @@ Copilot Prompt: "Identify data quality issues in data/transactions.csv:
 Copilot Prompt: "Write SQL to answer:
 1. What is the failed transaction rate by region?
 2. What is the average transaction amount by customer tier?
-3. Which account manager has the most high-value transactions?"
+3. Which account manager has the most high-value transactions?
+Use #schema.sql for column references."
 ```
 
 ### Step 4: Validation
@@ -119,47 +127,47 @@ Copilot Prompt: "Create validation queries to verify:
 - Total revenue calculation is correct
 - Count of transactions matches source data
 - No transactions are double-counted
-- Date ranges are valid"
+- Date ranges are valid
+Reference #schema.sql in your checks."
 ```
 
 ---
 
 ## Expected Deliverables
 
-After analyzing this data, you should have:
-
+Deliverables:
 1. **Data Quality Report** (`outputs/DATA_NOTES.md`)
-   - List of all data quality issues found
-   - Impact assessment for each issue
-   - Recommended remediation steps
+   - Issues list
+   - Impact notes
+   - Fix recs
 
-2. **SQL Queries** (saved in `/outputs/`)
-   - Queries to answer business questions
-   - Validation queries to check data integrity
-   - Comments explaining the logic
+2. **SQL Queries** (`/outputs/`)
+   - Business answers
+   - Logic checks referencing schema
+   - Commented logic
 
 3. **Business Insights** (`outputs/REPORT_NOTES.md`)
-   - Key findings from the analysis
-   - Trends and patterns observed
-   - Recommendations based on data
+   - Key findings
+   - Trends spotted
+   - Action recs
 
 ---
 
 ## Tips for Success
 
-### ✅ Do This:
-- Start with data profiling before diving into analysis
-- Validate your SQL queries on small samples first
-- Document assumptions (e.g., "Assuming NULL means 0")
-- Cross-reference transactions with customers table
-- Calculate percentages and rates for context
+### Do This:
+- Profile data first
+- Validate SQL logic against schema
+- Log assumptions
+- Cross-check customers table
+- Calculate rates for context
 
-### ❌ Avoid This:
-- Don't trust the data without validation
-- Don't ignore missing values in calculations
-- Don't forget to filter by status (e.g., only 'Completed' for revenue)
-- Don't assume categories are spelled consistently
-- Don't skip documenting data quality issues
+### Avoid This:
+- Avoid skipping validation
+- Avoid ignoring NULLs
+- Avoid missing status filters
+- Avoid assuming consistent spelling
+- Avoid skipping issue logs
 
 ---
 
@@ -187,16 +195,16 @@ After analyzing this data, you should have:
 
 ## Need Help?
 
-- **First time analyzing CSV data?** Ask Copilot: "How do I analyze a CSV file for data quality issues?"
-- **Stuck on SQL?** Reference the schema in `data/schema.sql`
-- **Not sure what to look for?** Review the business questions section above
-- **Want sample prompts?** See `SESSION_GUIDE.md`
+- CSV basics -> Ask Copilot: "How do I analyze a CSV file for data quality issues?"
+- SQL schema -> `data/schema.sql`
+- Question ideas -> list above
+- More prompts -> `SESSION_GUIDE.md`
 
 ---
 
 ## Ready to Analyze?
 
-👉 **Next Step:** Open `SESSION_GUIDE.md` and start the Data Analysis lab (5-25 minute section)
+Next: open `SESSION_GUIDE.md`, run Data Analysis lab (5-25 min)
 
 **Starter Prompt:**
 ```
@@ -204,4 +212,4 @@ After analyzing this data, you should have:
 For each issue, provide: description, count, impact, and recommended fix."
 ```
 
-Good luck! 📊
+Good luck! 

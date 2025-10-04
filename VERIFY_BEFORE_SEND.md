@@ -7,7 +7,7 @@
 - [ ] No proprietary business logic exposed
 
 ## Output Validation
-- [ ] Generated SQL tested on sample data
+- [ ] SQL logic reviewed against schema or sample data (document validation steps)
 - [ ] Business logic matches requirements
 - [ ] Edge cases considered
 - [ ] Numbers/calculations verified independently
