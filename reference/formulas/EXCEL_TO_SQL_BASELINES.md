@@ -29,5 +29,3 @@ Use these snippets as copy/paste context when asking Copilot to transform spread
     COUNTIFS(Status, "Completed", Region, A2 + Status, "Failed"),
 0)
 ```
-
-Document any adjustments (e.g., column names, date windows) in your lab notes.
