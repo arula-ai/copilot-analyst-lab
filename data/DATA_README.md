@@ -60,6 +60,7 @@ Use GitHub Copilot to help answer these questions:
 5. Which payment method has the highest success rate?
 
 **Excel-style baselines you can reference when asking for SQL:**
+(See [`reference/formulas/EXCEL_TO_SQL_BASELINES.md`](../reference/formulas/EXCEL_TO_SQL_BASELINES.md) for more examples.)
 - Monthly revenue trend: `=SUMIFS(Amount, Status, "Completed", Date, ">=" & start_of_month, Date, "<=" & end_of_month)`
 - Customer 80/20 concentration: `=LET(sorted, SORT(Table[Revenue],,-1), running, SCAN(0, sorted, LAMBDA(a,b,a+b)), running / SUM(sorted))`
 - Failed transaction alert: `=COUNTIFS(Status, "Failed", Amount, ">=500", Date, ">=" & TODAY()-7)`

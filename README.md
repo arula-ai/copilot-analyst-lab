@@ -37,7 +37,7 @@
 ### Phase 2: Practice Data Analysis (15 minutes)
 1. Open data/transactions.csv + data/customers.csv.
 2. Ask Copilot for data quality issues.
-3. Ask Copilot for business SQL.
+3. Ask Copilot for business SQL (reference [`reference/formulas/EXCEL_TO_SQL_BASELINES.md`](reference/formulas/EXCEL_TO_SQL_BASELINES.md) when translating Excel-style logic).
 4. Log notes in outputs/DATA_NOTES.md.
 
 **Sample Prompt:**

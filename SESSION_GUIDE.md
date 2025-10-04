@@ -87,7 +87,7 @@ maintainability. For each risk, provide: likelihood, impact, and mitigation."
 ---
 
 ### 40-55 Minutes: Excel to SQL Lab
-- [ ] Draft KPI Excel formulas
+- [ ] Draft KPI Excel formulas (see [`reference/formulas/EXCEL_TO_SQL_BASELINES.md`](reference/formulas/EXCEL_TO_SQL_BASELINES.md))
 - [ ] Mirror SQL equivalents
 - [ ] Reason through calc parity with schema
 - [ ] Log in REPORT_NOTES.md

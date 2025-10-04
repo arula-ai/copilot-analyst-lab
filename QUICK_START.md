@@ -25,6 +25,7 @@ Use this prompt:
 "Analyze #transactions.csv and #customers.csv for data quality issues. 
 List each issue with impact and recommended fixes."
 ```
+- Tip: Keep [`reference/formulas/EXCEL_TO_SQL_BASELINES.md`](reference/formulas/EXCEL_TO_SQL_BASELINES.md) handy when converting spreadsheet logic.
 
 #### 2. Understand COBOL
 **Prompt:**
