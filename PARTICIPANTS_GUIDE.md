@@ -42,7 +42,6 @@ Use RIFCC for every major prompt. After Copilot responds, inspect the source fil
 - [`fees_calc.cob`](legacy/fees_calc.cob) – fee logic (attach with `#fees_calc.cob`)
 - [`job_stream.jcl`](legacy/job_stream.jcl) – batch flow (attach with `#job_stream.jcl`)
 - [`copybook.cpy`](legacy/copybook.cpy) – data layout (attach with `#copybook.cpy`)
-- [`schema.sql`](data/schema.sql) – target schema (attach with `#schema.sql`)
 
 ### Step-by-Step Workflow
 1. **Understand the fee program**  
@@ -51,7 +50,7 @@ Use RIFCC for every major prompt. After Copilot responds, inspect the source fil
    - Capture numbered business rules plus a decision table in [`REQ_Logic.md`](outputs/REQ_Logic.md).
 
 2. **Create the data mapping**  
-   Run the [Creating Data Mappings](#creating-data-mappings-template) template with [`copybook.cpy`](legacy/copybook.cpy) and [`schema.sql`](data/schema.sql).  
+   Run the [Creating Data Mappings](#creating-data-mappings-template) template with [`copybook.cpy`](legacy/copybook.cpy) and [`fees_calc.cob`](legacy/fees_calc.cob).  
    - Normalize PIC/COMP-3 types (e.g., COMP-3(7,2) → DECIMAL(9,2)).  
    - Record results in [`REQ_DataMap.md`](outputs/REQ_DataMap.md) with transformation + validation notes.
 
@@ -64,7 +63,7 @@ Use RIFCC for every major prompt. After Copilot responds, inspect the source fil
    - Convert Copilot’s outline into a Mermaid diagram stored in [`REQ_Flow.md`](outputs/REQ_Flow.md).
 
 5. **Translate the fee logic to SQL**  
-   Apply the [SQL Translation](#sql-translation-template) template with [`fees_calc.cob`](legacy/fees_calc.cob) and [`schema.sql`](data/schema.sql).  
+   Apply the [SQL Translation](#sql-translation-template) template with [`fees_calc.cob`](legacy/fees_calc.cob) and [`copybook.cpy`](legacy/copybook.cpy).  
    - Refine and save the query in [`modern_equiv.sql`](outputs/modern_equiv.sql).
 
 ### Success Checklist
@@ -72,7 +71,7 @@ Use RIFCC for every major prompt. After Copilot responds, inspect the source fil
 - [`REQ_DataMap.md`](outputs/REQ_DataMap.md) – mapping table for every relevant copybook field
 - [`REQ_Flow.md`](outputs/REQ_Flow.md) – Mermaid diagram mirroring the JCL + COBOL steps
 - [`RISK_Register.md`](outputs/RISK_Register.md) – ≥5 risks with likelihood/impact/mitigation
-- [`modern_equiv.sql`](outputs/modern_equiv.sql) – SQL translation reviewed against [`schema.sql`](data/schema.sql)
+- [`modern_equiv.sql`](outputs/modern_equiv.sql) – SQL translation file you will create, and store in outputs/, to review against the schema and data mapping you create
 
 **Tips:** stay focused on business intent, log every hard-coded value, and capture validation steps you expect downstream teams to run.
 
@@ -85,9 +84,9 @@ As a business analyst specializing in legacy systems, explain this COBOL program
 ```
 
 #### Creating Data Mappings Template
-Attach in Copilot: `#copybook.cpy`, `#schema.sql` ([open](legacy/copybook.cpy), [open](data/schema.sql))
+Attach in Copilot: `#copybook.cpy`, `#fees_calc.cob` ([open](legacy/copybook.cpy), [open](legacy/fees_calc.cob))
 ```
-Create a source-to-target field mapping for modernization using #copybook.cpy and #schema.sql. Include source PIC/COMP-3 definitions, target SQL types, transformations, and validation rules. Format as a markdown table.
+Create a source-to-target field mapping for modernization using #copybook.cpy and #schema.sql. Include source PIC/COMP-3 definitions, target SQL types, transformations, and validation rules. Format as a markdown table in REQ_DataMap.md located in templates/.
 ```
 
 #### Risk Assessment Template
@@ -103,7 +102,7 @@ Summarize the batch process steps in #job_stream.jcl and the sub-steps inside #f
 ```
 
 #### SQL Translation Template
-Attach in Copilot: `#fees_calc.cob`, `#schema.sql` ([open](legacy/fees_calc.cob), [open](data/schema.sql))
+Attach in Copilot: `#fees_calc.cob`, `#REQ_DataMap.md` ([open](legacy/fees_calc.cob), [open](templates/REQ_DataMap.md))
 ```
 Write ANSI SQL that reproduces the fee calculation in #fees_calc.cob using the tables in #schema.sql. Include tier logic, discounts, and error conditions as comments.
 ```
