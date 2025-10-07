@@ -157,7 +157,6 @@ Deliverables:
 | `/explain` | Summarize legacy code or SQL |
 | `/fix` | Suggest repairs for selected text |
 | `/tests` | Generate validation plans |
-| `/doc` | Draft documentation or requirements |
 
 ### Common Issues & Fixes
 - Copilot ignores context → add explicit `#file` references.
